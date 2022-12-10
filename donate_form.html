@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/logo.png"></a>
+        
+        <nav>
+            <a href="./about.html">Sobre nós</a>
+            <a href="./contacts.html">Contactos</a>
+            <a class="current" href="./donate.html">Doar</a>
+            <button id="login">Registo/Login</button>
+        </nav>
+    </header>
+
+    <section>
+        <ul>
+            <li>Início</li>
+            <li>Doar</li> 
+        </ul>
+
+        <h3>Formulário de Doação</h3>
+        <p class="caption">
+            O (nome do serviço) agradece todo o tipo de doações de equipamentos ainda em bom estado. 
+            Se tiver algum produto que já não use e deseje doar, preencha o seguinte formulário. 
+            Após analisarmos a sua informação, entraremos em contacto consigo.
+        </p>
+
+        <form>
+            <div id="user_data">
+                <div>
+                    <label for="first_name">Primeiro Nome *</label><br>
+                    <input name="first_name" type="text"><br>
+    
+                    <label for="email">Email *</label><br>
+                    <input name="email" type="email"><br>
+    
+                    <label for="address">Morada *</label><br>
+                    <input name="address" type="text"><br>
+                </div>
+    
+                <div>
+                    <label for="last_name">Apelido *</label><br>
+                    <input name="last_name" type="text"><br>
+    
+                    <label for="phone">Telemóvel *</label><br>
+                    <input name="phone" type="tel"><br>
+    
+                    <label for="nif">NIF *</label><br>
+                    <input name="nif" type="tel"><br>
+                </div> 
+            </div>
+              
+          
+            <div id="form_bottom">
+                <label for="message">Mensagem</label><br>
+                <textarea name="message"></textarea>
+    
+                <label for="privacy_policy">Política de Privacidade *</label><br>
+                <div>
+                    <input id="privacy_policy" name="privacy_policy" type="checkbox">
+                    <p class="caption">Declaro que li e aceito a política de privacidade de (nome do serviço).</p>
+                </div>
+            </div>
+            
+       </form>
+        
+
+    </section>
+</body>
