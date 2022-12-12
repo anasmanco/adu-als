@@ -66,11 +66,20 @@ button {
   padding: 0 36px;
   border-radius: 22px;
   border: none;
-  background: #2F67F8;
-  color: white;
   font-size: 24px;
   line-height: 28px;
   text-transform: lowercase;
+  align-items: center;
+}
+
+button.primary {
+  background: #2F67F8;
+  color: white;
+}
+
+button.secondary {
+  background: rgba(157, 157, 157, 0.5411764706);
+  color: white;
 }
 
 /*** HEADER/NAV MENU ***/
@@ -215,13 +224,19 @@ section#contacts iframe {
 }
 
 /*** DONATE ***/
-form label {
+section#donation div :not(div) {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*** DONATE EQUIPMENT ***/
+section#equipment_donation form label {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   color: #323232;
 }
-form input:not(#privacy_policy), form textarea {
+section#equipment_donation form input:not(#privacy_policy), section#equipment_donation form textarea {
   width: 95%;
   height: 16px;
   border-radius: 20px;
@@ -232,22 +247,20 @@ form input:not(#privacy_policy), form textarea {
   line-height: 28px;
   color: #858484;
 }
-form textarea {
+section#equipment_donation form textarea {
   width: 97.5%;
   min-height: 164px;
   height: auto;
   resize: vertical;
 }
-
-#user_data {
+section#equipment_donation #user_data {
   display: flex;
   justify-content: space-between;
 }
-#user_data div {
+section#equipment_donation #user_data div {
   width: 48%;
 }
-
-#form_bottom div {
+section#equipment_donation #form_bottom div {
   width: 100%;
   display: inline-flex;
 }

@@ -15,13 +15,88 @@
             <a href="./about.html">Sobre nós</a>
             <a href="./contacts.html">Contactos</a>
             <a class="current" href="./donate.html">Doar</a>
-            <button id="login">Registo/Login</button>
+            <button id="login" class="primary">Registo/Login</button>
         </nav>
     </header>
 
 
-    <section>
-        <button onclick="window.location.href='./donate_form.html'">Doar equipamentos</button>
+    <section id="donation">
+        <h3>Doação</h3>
+        <div>
+            <div>
+                <p>
+                    Se tem em sua posse produtos que não use e não queira guardar, pode doar esses equipamentos e ajudar a contribuir para uma melhor qualidade 
+                    de vida dos nossos utilizadores com ELA. Clique no botão “Doar equipamentos”, e ajude-nos a ajudar o próximo.
+                </p>
+                <button class="primary" onclick="window.location.href='./donate_form.html'">Doar equipamentos</button>
+    
+            </div>
+    
+            <div>
+                <img src="./img/solidarity.png">
+                <h4>Faça Parte da Nossa Missão</h4>
+            </div>
+        </div>        
     </section>
 
+    <section id="money_donation">
+        <h3>Doação Monetária</h3>
+        <div>
+            <label for="name">Primeiro Nome *</label><br>
+            <input name="name" type="text"><br>
+
+            <label for="address">Morada *</label><br>
+            <input name="address" type="text"><br>
+
+            <label for="nif">NIF *</label><br>
+            <input name="nif" type="tel"><br>
+
+
+            <label for="money_value">Inserir valor do donativo *</label><br>
+            <input name="money_value" type="number"><br>
+        </div>
+
+        <h4>Selecione um Método de Pagamento</h4>
+        <div>
+            <button class="payment_type">
+                <p>Multibanco</p>
+                <img>
+            </button>
+            <button class="payment_type">
+                <p>VISA</p>
+                <img>
+            </button>
+            <button class="payment_type">
+                <p>MB WAY</p>
+                <img>
+            </button>
+            <button class="payment_type">
+                <p>Paypal</p>
+                <img>
+            </button>
+
+            <div>
+                <div>
+                    <input id="donate_once" name="donate_once" type="checkbox">
+                    <p>Doar uma vez</p>
+                </div>
+                <div>
+                    <input id="donate_monthly" name="donate_monthly" type="checkbox">
+                    <p>Doar mensalmente</p>
+                </div>
+
+                <p class="caption">
+                    Donativo também disponível através de transferência bancária para o IBAN:
+                    <br>
+                    <br>
+                    PT50 2222 2222 2222 2222 2222 2
+                </p>
+            </div>
+
+            <div>
+                <button class="secondary">cancelar</button>
+                <button class="primary">confirmar</button>
+            </div>
+        </div>  
+    </section>
 </body>
